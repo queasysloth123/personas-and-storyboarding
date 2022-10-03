@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="side-nav">
+            <div class="main-nav">
+                <div class="logo-wrapper">
+                    <img src="./imgs/snackpass-logo.png">
+                </div>
+                <div class="menu-icon-wrapper">
+                    <img class="menu-icon" src="./imgs/menu.png" onclick="expandMenu()">
+                    <img class="exit-icon" src="./imgs/close.png" onclick="collapseMenu()">
+                </div>
+            </div>
+            <a href="#selected-interface-section" onclick="collapseMenu()">Selected Interface</a>
+            <a href="#sketch-description-section" onclick="collapseMenu()">Sketch & Description</a>
+            <a href="#key-observations-section" onclick="collapseMenu()">Key Observations</a>
+            <a href="#interview-summary-section" onclick="collapseMenu()">Interview Summary</a>
+            <a href="#empathy-maps-section" onclick="collapseMenu()">Empathy Maps</a>
+            <a href="#storyboard-section" onclick="collapseMenu()">Storyboard</a>
+        </div>
+        <div class="main">
+            <div id="selected-interface-section" class="section">
+                <h1>Selected Interface</h1>
+                <h2>Snackpass’s self-ordering kiosk</h2>
+            </div>
+            <div id="sketch-description-section" class="section">
+                <h1>Sektch & Description</h1>
+                <div class="section-content">
+                    <img src="./imgs/kiosk.jpg">
+                </div>
+                <h4>Snackpass's kiosk offers a simple touch-screen interface for customers to place their orders without having to 
+                    wait in line and talk to a cashier.</h4>
+                <h1 class="extra-margin-top">How to use</h1>
+                <div class="section-content steps">
+                    <div class="step">
+                        <div class="circle-number">1</div>
+                        <p>Tap to start order</p>
+                    </div>
+                    <div class="step">
+                        <div class="circle-number">2</div>
+                        <p>Scroll and select desired item</p>
+                    </div>
+                    <div class="step">
+                        <div class="circle-number">3</div>
+                        <p>Choose toppings and sides</p>
+                    </div>
+                    <div class="step">
+                        <div class="circle-number">4</div>
+                        <p>Add to cart</p>
+                    </div>
+                    <div class="step">
+                        <div class="circle-number">5</div>
+                        <p>Continue to checkout</p>
+                    </div>
+                    <div class="step">
+                        <div class="circle-number">6</div>
+                        <p>Pay and wait for order</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-observations-section" class="section">
+                <h1>Key Observations</h1>
+                <div class="section-content">
+                    <ul class="obs-list">
+                       <li>Customers often took a total of 3 minutes to place their order.</li> 
+                       <li>Users are usually young adults or families.</li> 
+                       <li>People generally use contactless payment.</li>
+                       <li>Order does not always go through.</li>
+                       <li>Kiosk has no line.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="interview-summary-section" class="section">
+                <h1>Interview Summary</h1>
+                <h2>Questions asked</h2>
+                <div class="section-content">
+                    <ol class="obs-list">
+                       <li>Why do you use the self-severing kiosk?</li> 
+                       <li>Have you had any difficulties using the kiosk? If so, please describe them.</li> 
+                       <li>Do you have the Snackpass mobile app? If so, why do you use the kiosk instead?</li> 
+                       <li>How does it feel to place your order without a cashier?</li> 
+                       <li>How do you feel about the layout of the kiosk?</li> 
+                    </ol>
+                </div>
+                <h2 class="extra-margin-top">Responses</h2>
+                <div class="section-content">
+                    <ul class="obs-list">
+                       <li>Customers often prefer ordering on the Snackpass kiosk because there is no line, no pressure, and it is easy to navigate.</li> 
+                       <li>Some downsides to using the kiosk include fast order timeouts, transaction failures, and the inability to earn Snackpass points.</li> 
+                       <li>Users have heard from friends that the kiosk offers discounts if mobile phone number is entered.</li>
+                       <li>People feel like they are missing the social interaction that comes with ordering from a cashier.</li>
+                       <li>The menu items are too big, which can make scrolling though all the options overwhelming.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="empathy-maps-section" class="section">
+                <h1>Empathy Maps</h1>
+                <div class="empathy-maps-wrapper">
+                    <div class="empathy-map">
+                        <img src="./imgs/amy.jpg">
+                        <h2>Amy</h2>
+                        <p>Amy is a college student who likes to try new things. She decides to try boba for the first time and orders with Snackpass's kiosk.
+                            She proceeds to look through all the menu items, but the icons are too big and take up a lot of space, making the menu feel more overwhelming than it actually is.
+                            She also has dietary restrictions and wishes for a way to filter the menu or at least see common allergenic ingredients in each menu item before proceeding to select toppings/sides. 
+                            Because Amy is taking to long to choose her order, the kiosk times out and terminates her session. Amy tries again, and ends up getting brown sugar boba with soy milk.
+                        </p>
+                    </div>
+                    <div class="empathy-map">
+                        <img src="./imgs/joe.jpg">
+                        <h2>Joe</h2>
+                        <p> Joe is a college student who doesn't like to try new things. He decides to get boba again for the 2nd time today before going to his next class. 
+                            He sees the long line to the cashier and becomes worried that he won't get his drink in time. He, instead, orders on Snackpass's kiosk, selecting the first item on the  menu.
+                            He pays for his drink, and is offered a discount if he enters his phone number. He is disappointed that he link it to his Snackpass account because he is one gift away from 
+                            hatching an egg with his friend. He enters his number, but his order fails to go through. Joe is upset, tries again, and successfully orders his drink.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="storyboard-section" class="section">
+                <h1>Storyboard</h1>
+                <div class="storyboard-wrapper">
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb1.png">
+                        <p class="storyboard-desc">Joe realizes that he's thirsty for a drink during in class.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb2.png">
+                        <p class="storyboard-desc">Joe waits until after class to walk to Tiger Sugar before going to his next class.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb3.png">
+                        <p class="storyboard-desc">He sees a long line to the cashier and doesn't think he'll be able to make it in time for his next class.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb4.png">
+                        <p class="storyboard-desc">As he leaves, he sees Snackpass's self-ordering kiosk.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb5.png">
+                        <p class="storyboard-desc">He approaches it, and taps to start his order.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb6.png">
+                        <p class="storyboard-desc">He realizes it's a self-ordering kiosk, and begins to find his go-to drink.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb7.png">
+                        <p class="storyboard-desc">He finds it, and chooses his toppings.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb8.png">
+                        <p class="storyboard-desc">Joe then proceeds to the checkout page and reviews his order.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb9.png">
+                        <p class="storyboard-desc">He pays with his credit card with contactless payment.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb10.png">
+                        <p class="storyboard-desc">He receives his order number and waits for his drink to be made.</p>
+                    </div>
+                    <div class="storyboard-item">
+                        <img src="./imgs/Sb11.png">
+                        <p class="storyboard-desc">Joe gets his drink in less than 2 minutes, skipping the long line, and walks to his next class.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
