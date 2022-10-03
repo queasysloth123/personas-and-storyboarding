@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    line-height: 1.6;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -206,16 +210,15 @@ hr {
 .storyboard-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: center;
 }
 
 .storyboard-item {
     width: 200px;
-    height: 300px;
     background-color: white;
     box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     padding: 20px;
+    margin: 10px;
 }
 
 .storyboard-item img {
